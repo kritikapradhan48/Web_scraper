@@ -45,7 +45,7 @@ class WebScraper:
             logging.error(f"Error saving data to CSV: {e}")
 
 def main():
-    target_url = "http://books.toscrape.com/"  # Replace with the URL of your choice
+    target_url = "https://www.goodreads.com/"  # Replace with the URL of your choice
     scraper = WebScraper(target_url)
     data = scraper.extract_data()
     scraper.save_to_csv(data)
